@@ -1,10 +1,10 @@
 package com.main.bookreaderway.presentation.ui
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.main.bookreaderway.databinding.ActivityMainBinding
+import com.main.core.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
     override fun onCreate(savedInstanceState: Bundle?) {

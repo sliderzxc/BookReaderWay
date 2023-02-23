@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/background_book"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivBookImage"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/it_is_an_icon_of_the_book"
+        android:src="@drawable/example_book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBookImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Чистая архитектура. Искусство разработки програмного обеспечения" />
+
+    <TextView
+        android:id="@+id/tvBookInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#B1A5A5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvBookTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvBookTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvBookTitle"
+        tools:text="PDF, 13 МБ" />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/numberProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:paddingEnd="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tvBookInfo"
+        app:layout_constraintStart_toStartOf="@+id/tvBookInfo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:foregroundGravity="left"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/numberProgressBar"
+        app:layout_constraintStart_toStartOf="@+id/numberProgressBar">
+
+        <ImageView
+            android:id="@+id/btnReadBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_read" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_favorite" />
+
+        <ImageView
+            android:id="@+id/btnArchiveBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_archive" />
+
+        <ImageView
+            android:id="@+id/btnDeleteBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_delete" />
+
+        <ImageView
+            android:id="@+id/btnShareBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_share" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
