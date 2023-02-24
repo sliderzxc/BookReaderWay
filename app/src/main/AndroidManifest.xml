@@ -31,7 +31,9 @@
                 <data android:mimeType="application/pdf" />
             </intent-filter>
         </activity>
-        <activity android:name="com.folioreader.ui.activity.SearchActivity" android:exported="true" />
+        <activity
+            android:name="com.folioreader.ui.activity.SearchActivity"
+            android:exported="true">
+        </activity>
     </application>
-
 </manifest>

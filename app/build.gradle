@@ -18,6 +18,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        missingDimensionStrategy 'androidx.core:core:core', 'androidx.appcompat:appcompat'
     }
 
     buildTypes {
@@ -52,6 +53,8 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
     implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
     implementation "androidx.fragment:fragment-ktx:1.5.5"
+    //BookView
+    implementation "com.folioreader:folioreader:0.5.4"
     //Modules
     implementation project(path: ':core')
     implementation project(path: ':books')
