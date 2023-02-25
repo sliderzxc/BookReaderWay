@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookReadingNavGraph"
+    app:startDestination="@id/bookReadingFragment">
+
+    <fragment
+        android:id="@+id/bookReadingFragment"
+        android:name="com.main.bookreading.presentation.ui.ReadingBookFragment"
+        android:label="BookReadingFragment">
+
+        <deepLink app:uri="bookReader://reading" />
+    </fragment>
+</navigation>

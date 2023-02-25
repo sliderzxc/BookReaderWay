@@ -20,7 +20,7 @@ interface Communication {
 
     interface Mutable<T> : Observe<T>, Mutate<T>, Value<T>
 
-    abstract class Abstract<T>(
+    abstract class Abstract<T: Any>(
         protected val liveData: MutableLiveData<T> = MutableLiveData()
     ) : Mutable<T> {
         override fun observe(owner: LifecycleOwner, observer: Observer<T>) {

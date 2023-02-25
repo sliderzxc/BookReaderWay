@@ -5,4 +5,5 @@
     app:startDestination="@id/booksNavGraph">
 
     <include app:graph="@navigation/books_nav_graph" />
+    <include app:graph="@navigation/book_reading_nav_graph" />
 </navigation>

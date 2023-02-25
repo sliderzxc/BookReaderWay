@@ -9,6 +9,6 @@
         android:name="com.main.books.presentation.ui.BooksFragment"
         android:label="BooksFragment">
 
-        <deepLink app:uri="swapLike://books" />
+        <deepLink app:uri="bookReader://books" />
     </fragment>
 </navigation>
